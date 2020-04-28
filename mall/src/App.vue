@@ -7,13 +7,28 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+// import axios from 'axios'
+import jsonp from 'jsonp'
 
 export default {
   name: 'App',
   components: {
     HelloWorld
   },
-  
+  data() {
+    return {
+      age:30
+    }
+  },
+  mounted() {
+    let url = "https://www.easy-mock.com/login"
+    axios.get(url).then(()=>{
+
+    })
+
+ 
+  }
+
 }
 </script>
 
